@@ -1,2 +1,4 @@
 # Linode_objectstorage_watchfolder
-This will automate event triggers when new objects are added to the Linode object storage
+This is script functions as a watch folder for Linode object storage. 
+USECASE: Typically when a new file or a folder is added to the object storage bucket and a corresponding event needs to be triggered access logs or event logs on the bucket is used to trigger these events. This script automates the process of triggering events when new objects are added to the storage. The script consists of a function that regularly scans the object storage and when a new object is added a message is displayed. 
+Prerequisite: A nanode or any exisitng VM to host the script. The script will inturn read/list the object to check for new files. 
